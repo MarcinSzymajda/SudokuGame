@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxview.GameForm">
+    <children>
+        
+        <GridPane fx:id="obszarSudoku" alignment="CENTER" layoutX="78.0" layoutY="69.0" prefHeight="413.0" prefWidth="475.0">
+
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+
+            </rowConstraints>
+
+        </GridPane>
+      <Button fx:id="bzapiszgre" layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#zapiszGre" text="Zapisz grę" />
+      <Button fx:id="bzapiszgredb" layoutX="106.0" layoutY="14.0" mnemonicParsing="false" onAction="#zapiszGreDB" text="Zapisz grę do bazy" />
+      <Button fx:id="bsprawdz" layoutX="240.0" layoutY="14.0" mnemonicParsing="false" onAction="#sprawdzPlansze" text="Sprawdź planszę" />
+      <Text fx:id="twynik" layoutX="343.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+
+    </children>
+</AnchorPane>

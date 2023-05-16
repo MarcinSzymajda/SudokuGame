@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxview.Menu">
+   <children>
+      <AnchorPane layoutX="200.0" layoutY="74.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="bpoziom1" layoutX="67.0" layoutY="15.0" mnemonicParsing="false" onAction="#setPoziom1" text="Poziom 1" />
+            <Button fx:id="bpoziom2" layoutX="67.0" layoutY="55.0" mnemonicParsing="false" onAction="#setPoziom2" text="Poziom 2" />
+            <Button fx:id="bpoziom3" layoutX="67.0" layoutY="95.0" mnemonicParsing="false" onAction="#setPoziom3" text="Poziom 3" />
+            <Button fx:id="bwczytaj" layoutX="61.5" layoutY="135.0" mnemonicParsing="false" onAction="#wczytajGre" text="Wczytaj grę z pliku" />
+            <Button fx:id="bwczytajdb" layoutX="41.5" layoutY="175.0" mnemonicParsing="false" onAction="#wczytajDB" text="Wczytaj grę z bazy" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="eng" layoutX="34.0" layoutY="338.0" mnemonicParsing="false" onAction="#setEnglish" text="EN" />
+      <Button fx:id="pl" layoutX="66.0" layoutY="338.0" mnemonicParsing="false" onAction="#setPolish" text="PL" />
+      <Text fx:id="langchoose" layoutX="30.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybierz jezyk" />
+      <Text fx:id="aut1" layoutX="39.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="aut2" layoutX="39.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>
